@@ -9,7 +9,7 @@ public class Nothing {
         Weapon w = new Weapon();
 
         NPC bob = new NPC();
-        NPC susan = new NPC();
+        NPC susan = new NPC("SUSAN");
 
         //bob.health = -10;
         System.out.println(
@@ -23,6 +23,8 @@ public class Nothing {
         System.out.println(
                 "Susan's health: "
                         + susan.getHealth());
+
+
 
     }
 

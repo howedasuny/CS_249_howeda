@@ -6,18 +6,33 @@ public class NPC {
     private int health = 100;
     private String name = ""; // null
 
+    public NPC() {}
+
+    public NPC(String n) {
+        name = n;
+    }
+
     public int getHealth() {
         return health;
     }
 
-    public void setHealth(int h) {
+    public boolean setHealth(int h) {
+        boolean success = false;
+
         if(h >= 0 && h <= 100) {
             health = h;
+            success = true;
         }
         //else {
         //    System.err.println("ERROR: BAD HEALTH!");
+        //    return false;
         //}
+
+        return success;
     }
 
+    public String getName() {
+        return name;
+    }
 
 }
