@@ -9,9 +9,9 @@ public class Armada {
         SpaceVessel vessel = new SpaceVessel();
 
         //Ask user to input info, read inputs
-        System.out.println("Enter vessel name. >");
+        System.out.println("Enter vessel name: ");
         String name = input.nextLine();
-        System.out.println("Enter length and weight. >");
+        System.out.println("Enter length and weight: ");
         String line = input.nextLine();
 
         //Parse length and weight
