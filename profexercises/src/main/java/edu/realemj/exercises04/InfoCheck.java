@@ -4,6 +4,14 @@ import java.util.*;
 
 public class InfoCheck {
     public static void main(String [] args) {
+        StringBuilder sb = new StringBuilder();
+        for(int i = 0; i < 100; i++) {
+            sb.append(i);
+            sb.append("...");
+        }
+        String myNumbers = sb.toString();
+        System.out.println(myNumbers);
+
         Scanner input = new Scanner(System.in);
         System.out.println("Enter name:");
         String name = input.nextLine();
