@@ -25,7 +25,7 @@ test {
 }
 
 application {
-    mainClass = "edu.realemj.exercises06.L33tSpeak"
+    mainClass = "edu.realemj.oregon.OregonTrail"
     mainModule = "profexercisesmod"
 }
 
@@ -36,4 +36,5 @@ tasks.register('runApp', JavaExec) {
     mainModule = "profexercisesmod"
     group "application"
     standardInput = System.in
+    args = ["test1", "test2"]
 }
