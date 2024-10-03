@@ -24,17 +24,23 @@ public class Party {
     }
 
     public void killEveryone() {
-        for(int i = 0; i < people.length; i++) {
-            people[i].kill();
+        //for(int i = 0; i < people.length; i++) {
+        //    people[i].kill();
+        //}
+        for(Person p : people) {
+            p.kill();
         }
     }
 
     public String toString() {
         String s = "PARTY:\n";
         s += getPartyCnt() + " souls alive.\n";
-        for(int i = 0; i < people.length; i++) {
-            s += "* " + people[i] + "\n";
+        for(var p : people) {
+            s += "* " + p + "\n";
         }
+        //for(int i = 0; i < people.length; i++) {
+        //    s += "* " + people[i] + "\n";
+        //}
         return s;
     }
 
