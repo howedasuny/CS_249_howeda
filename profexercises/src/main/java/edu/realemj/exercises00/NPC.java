@@ -16,6 +16,10 @@ public class NPC {
         return health;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public boolean setHealth(int h) {
         boolean success = false;
 
@@ -31,8 +35,5 @@ public class NPC {
         return success;
     }
 
-    public String getName() {
-        return name;
-    }
 
 }
