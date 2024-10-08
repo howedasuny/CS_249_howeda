@@ -102,4 +102,17 @@ public class Matrix {
         });
     }
 
+    public String toPointString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("(");
+        for(int row = 0; row < (getRowCnt()-1); row++) {
+            if(row != 0) {
+                sb.append(",");
+            }
+            sb.append(m[row][0]);
+        }
+        sb.append(")");
+        return sb.toString();
+    }
+
 }
