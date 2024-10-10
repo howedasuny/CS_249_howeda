@@ -6,10 +6,15 @@ public class Circle {
     private double radius = 1.0;
     private Matrix center = Matrix.makePoint2D(0,0);
 
-    public Circle() {}
+    public Circle() {
+        this(1.0, Matrix.makePoint2D(0,0));
+    }
 
     public Circle(double radius) {
-        setRadius(radius);
+        // Calling another constructor
+        this(radius, Matrix.makePoint2D(0,0));
+        //setRadius(radius);
+        System.out.println("Radius only Circle");
     }
 
     public Circle(double radius, Matrix center) {
