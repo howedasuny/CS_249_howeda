@@ -1,5 +1,6 @@
 package edu.realemj.exercises12;
 import edu.realemj.exercises09.Matrix;
+import edu.realemj.exercises09.MathUtil;
 
 public class Circle extends Shape {
     private double radius = 1.0;
@@ -37,5 +38,17 @@ public class Circle extends Shape {
         String s = "Circle (r=" + radius + ") ";
         s += "which is also a " + super.toString();
         return s;
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if(other instanceof Circle otherCircle) {
+            return (MathUtil.isDoubleEqual(
+                        radius,
+                        otherCircle.radius)
+                    && super.equals(otherCircle));        }
+        else {
+            return false;
+        }
     }
 }

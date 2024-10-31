@@ -1,5 +1,6 @@
 package edu.realemj.exercises12;
 
+import java.util.*;
 import edu.realemj.exercises09.Matrix;
 
 public class ShapeWorld {
@@ -29,5 +30,36 @@ public class ShapeWorld {
         System.out.println(s2);
         System.out.println(c1);
         System.out.println(c3);
+
+        ArrayList<Shape> allShapes = new ArrayList<>();
+        ArrayList<String> allNames = new ArrayList<>();
+
+        allShapes.add(s1);
+        allShapes.add(s2);
+        allShapes.add(c1);
+        allShapes.add(c3);
+
+        allNames.add("Bob");
+
+        System.out.println(allShapes.size());
+        System.out.println(allShapes);
+
+        allShapes.remove(new Shape(8,-4,true));
+
+        for(int i = 0; i < allShapes.size(); i++) {
+            System.out.println(
+                    "Item " + i
+                    + ": " + allShapes.get(i));
+        }
+
+        allShapes.clear();
+
+        System.out.println(allShapes);
+
+        Scanner input = SystemInputSingleton
+                .getInstance()
+                .getScanner();
+
+
     }
 }
