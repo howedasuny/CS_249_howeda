@@ -11,7 +11,7 @@ public class Hallmark {
         System.out.println("Enter number of lines:");
         int numLines = Integer.parseInt(input.nextLine());
         String[] allLines = new String[numLines];
-        System.out.println("Enter lines: ");
+        System.out.println("Enter lines:");
         for (int i = 0; i < numLines; ++i) {
             allLines[i] = input.nextLine();
         }
@@ -26,7 +26,7 @@ public class Hallmark {
         GreetingCard newCard = generateCard(input);
 
         //print out results
-        System.out.println("For any occasion: ");
+        System.out.println("For any occasion:");
         System.out.println(newCard);
     }
 
