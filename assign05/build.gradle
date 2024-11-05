@@ -1,6 +1,5 @@
 plugins {   
-    id 'application'
-    id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'application'   
 }
 
 version = '1.0'
@@ -9,14 +8,9 @@ repositories {
     mavenCentral()    
 }
 
-javafx {
-    version = "22"
-    modules = [ 'javafx.controls', 'javafx.fxml']
-}
-
 dependencies {
     testImplementation(testFixtures(project(":coretest")))
-    testImplementation 'org.testng:testng:7.9.0'
+    testImplementation 'org.testng:testng:7.8.0'
     testImplementation 'org.slf4j:slf4j-log4j12:1.7.36'
 }
 
@@ -25,16 +19,17 @@ test {
 }
 
 application {
-    mainClass = "edu.realemj.exercises13.Quotient"
-    mainModule = "profexercisesmod"
+    mainClass = "edu.realemj.assign05.Silmarillion"
+    mainModule = "assign05mod"    
 }
 
 tasks.register('runApp', JavaExec) {
-    dependsOn build
+    dependsOn compileJava
     classpath = sourceSets.main.runtimeClasspath
     jvmArgs = ['--module-path', classpath.asPath]
-    mainModule = "profexercisesmod"
+    mainModule = "assign05mod"
     group "application"
     standardInput = System.in
-    args = ["test1", "test2"]
 }
+
+
