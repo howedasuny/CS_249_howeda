@@ -1,6 +1,6 @@
-package edu.realemj.assign04;
+package edu.howeda.assign04;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class DraftingTable {
     public static void main(String [] args) {
@@ -23,6 +23,6 @@ public class DraftingTable {
             System.out.println(buffer.getBoardString());
             System.out.println("Again? (y/n)");
             cont = input.next().charAt(0);
-        }while(cont == 'y');
+        } while(cont == 'y');
     }
 }
