@@ -62,7 +62,9 @@ public class GreetingCard {
         returnLine = "";
         remainingLines = inLines.length;
         for (int i = 0; i < remainingLines; i += 5) {
-            returnLine += "\n";
+            if(i != 0) {
+                returnLine += "\n";
+            }
             returnLine += generateBoundaryLine() + generateBoundaryLine();
             if ((remainingLines - i) < 5) {
                 lineCount = (remainingLines - i);
