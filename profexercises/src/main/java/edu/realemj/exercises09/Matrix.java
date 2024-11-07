@@ -94,10 +94,22 @@ public class Matrix {
         });
     }
 
-    public static Matrix makePoint2D(double x, double y) {
+    public static Matrix makePoint2D(double x,
+                                     double y) {
         return new Matrix(new double[][] {
                 {x},
                 {y},
+                {1}
+        });
+    }
+
+    public static Matrix makePoint3D(double x,
+                                     double y,
+                                     double z) {
+        return new Matrix(new double[][] {
+                {x},
+                {y},
+                {z},
                 {1}
         });
     }

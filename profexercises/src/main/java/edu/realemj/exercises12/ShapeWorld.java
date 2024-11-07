@@ -2,6 +2,7 @@ package edu.realemj.exercises12;
 
 import java.util.*;
 import edu.realemj.exercises09.Matrix;
+import edu.realemj.exercises13.InvalidRadiusException;
 
 public class ShapeWorld {
     public static void printArea(Shape s) {
@@ -25,6 +26,18 @@ public class ShapeWorld {
                         false);
 
         Circle c3 = new Circle(9,-2, false);
+
+        try {
+            Circle c4 = new Circle(5.3);
+            System.out.println(c4);
+            Circle c5 = new Circle(-3);
+            System.out.println(c5);
+            Circle c6 = new Circle(2.9);
+            System.out.println(c6);
+        }
+        catch(InvalidRadiusException ir) {
+            System.out.println(ir);
+        }
 
         System.out.println(s1);
         System.out.println(s2);
