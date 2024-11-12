@@ -13,8 +13,8 @@ public class ShapeWorld {
     }
 
     public static void main(String [] args) {
-        Shape s1 = new Shape(8, -4, true);
-        Shape s2 = new Shape(-7,-2, false);
+        Shape s1 = new Circle(); //new Shape(8, -4, true);
+        Shape s2 = new Circle(); //new Shape(-7,-2, false);
         Circle c1 = new Circle();
         c1.setPos(Matrix.makePoint2D(2,3));
 
@@ -57,7 +57,7 @@ public class ShapeWorld {
         System.out.println(allShapes.size());
         System.out.println(allShapes);
 
-        allShapes.remove(new Shape(8,-4,true));
+        allShapes.remove(new Circle()); //new Shape(8,-4,true));
 
         for(int i = 0; i < allShapes.size(); i++) {
             System.out.println(

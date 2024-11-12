@@ -94,6 +94,29 @@ public class Matrix {
         });
     }
 
+    public static Matrix makeScaling3D(double sx,
+                                       double sy,
+                                       double sz) {
+        return new Matrix(new double[][] {
+                {sx,0,0,0},
+                {0,sy,0,0},
+                {0,0,sz,0},
+                {0,0,0,1}
+        });
+    }
+
+    public static Matrix makeRotateZ3D(double angle) {
+        double r = Math.toRadians(angle);
+        double sv = Math.sin(r);
+        double cv = Math.cos(r);
+        return new Matrix(new double[][] {
+                {cv,-sv,0,0},
+                {sv,cv,0,0},
+                {0,0,1,0},
+                {0,0,0,1}
+        });
+    }
+
     public static Matrix makePoint2D(double x,
                                      double y) {
         return new Matrix(new double[][] {
@@ -125,6 +148,13 @@ public class Matrix {
         }
         sb.append(")");
         return sb.toString();
+    }
+
+    public String to3DVertexOBJString() {
+        return "v "
+                + m[0][0] + " "
+                + m[1][0] + " "
+                + m[2][0];
     }
 
     @Override
