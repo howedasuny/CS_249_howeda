@@ -1,5 +1,6 @@
-package edu.realemj.assign05;
+package edu.howeda.assign05;
 
+import edu.howeda.assign05.Silmarillion;
 import edu.realemj.testing.GeneralTesting;
 import org.testng.Assert;
 import org.testng.annotations.Test;

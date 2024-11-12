@@ -1,4 +1,4 @@
-package edu.realemj.assign05;
+package edu.howeda.assign05;
 
 import java.util.Scanner;
 
@@ -20,7 +20,7 @@ public class Silmarillion {
 
             keepGoing = fangorn.addGiant(name, typeName);
 
-        }while(keepGoing); 
+        } while (keepGoing);
 
         fangorn.printAllGiants();
         fangorn.printAllTrees();
