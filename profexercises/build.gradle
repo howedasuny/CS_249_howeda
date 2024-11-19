@@ -25,7 +25,7 @@ test {
 }
 
 application {
-    mainClass = "edu.realemj.midterm.Snippets"
+    mainClass = "edu.realemj.exercises15.strategy.BearSim"
     mainModule = "profexercisesmod"
 }
 
