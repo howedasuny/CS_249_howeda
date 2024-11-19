@@ -25,7 +25,7 @@ test {
 }
 
 application {
-    mainClass = "edu.realemj.exercises14.World"
+    mainClass = "edu.realemj.midterm.Snippets"
     mainModule = "profexercisesmod"
 }
 
