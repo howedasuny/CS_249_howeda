@@ -1,4 +1,4 @@
-package edu.realemj.assign06;
+package edu.howeda.assign06;
 //NOTE: CHANGE realemj to YOUR SITNETID!!!
 
 import java.io.File;
@@ -23,7 +23,7 @@ public class Oblivion {
 		) {	  
             gameState.load(levelFile);
 		}
-		catch(FileNotFoundException e) {
+		catch (FileNotFoundException e) {
 			System.err.println("Game File Error: " + levelName + " not found!");
 		}
 		catch(Exception e) {

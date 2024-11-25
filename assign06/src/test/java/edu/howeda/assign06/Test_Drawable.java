@@ -1,5 +1,5 @@
-package edu.realemj.assign06;
-import edu.realemj.assign04.GameBoard;
+package edu.howeda.assign06;
+import edu.howeda.assign04.GameBoard;
 //NOTE: CHANGE realemj to YOUR SITNETID!!!
 import org.testng.annotations.Test;
 
