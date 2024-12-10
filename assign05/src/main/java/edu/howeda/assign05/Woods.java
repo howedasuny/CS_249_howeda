@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Woods {
     //private variables
-    ArrayList<Giant> giants = new ArrayList<Giant>();
+    private ArrayList<Giant> giants = new ArrayList<Giant>();
     
     //public methods
     public Giant createGiant(String name, String typeName) {
